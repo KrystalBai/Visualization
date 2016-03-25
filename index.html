@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Visualization</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+<script src="js/d3.min.js"></script>
+<script src="js/main.js"></script>
+<script>
+
+    var width = 960,
+            height = 500,
+            τ = 2 * Math.PI;
+
+    var fields = [
+        {value: 62, size: 100, label: "physical"},
+        {value: 18, size: 100, label: "digital"},
+        {value: 20, size: 100, label: "service"}
+    ];
+
+    var arc = d3.svg.arc()
+            .innerRadius(width / 6.5 - 60)
+            .outerRadius(width / 6.5 - 50)
+            .startAngle(0);
+
+    var svg = d3.select("body").append("svg")
+            .attr("width", width)
+            .attr("height", height);
+
+    var field = svg.selectAll(".field")
+            .data(fields)
+            .enter().append("g")
+            .attr("transform", function(d, i) { return "translate(" + (i * 2 + 1.25) / 6.5 * width + "," + height / 2 + ")"; })
+            .attr("class", "field");
+
+    field.append("path")
+            .attr("class", "path path--background")
+            .datum({endAngle: τ})
+            .style("fill", "#ccc")
+            .attr("d", arc);
+
+    var foreground = field.append("path")
+            .attr("class", "path path--foreground")
+            .style("fill", "#913ecc")
+            .transition()
+            .duration(750)
+            .call(arcTween);
+
+    function arcTween(transition) {
+        transition.attrTween("d", function(d) {
+            d.endAngle = (d.value / d.size) * -2 * Math.PI;
+            var interpolate = d3.interpolate(0, d.endAngle);
+            return function(t) {
+                d.endAngle = interpolate(t);
+                return arc(d);
+            };
+        });
+    }
+
+
+
+</script>
+</body>
+</html>
