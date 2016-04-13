@@ -1,0 +1,382 @@
+{
+  "tradDataByDay": [
+    {
+      "dayIndex":"1",
+      "tradeTop5": [
+        {
+          "name": "浙江",
+          "value": "9.45"
+        },
+        {
+          "name": "广东",
+          "value": "9.36"
+        },
+        {
+          "name": "北京",
+          "value": "9.24"
+        },
+        {
+          "name": "江苏",
+          "value": "8.83"
+        },
+        {
+          "name": "四川",
+          "value": "8.52"
+        }
+      ],
+      "tradByCategory": [
+        {
+          "name": "实物商品",
+          "percentage": "60%"
+        },
+        {
+          "name": "数字商品",
+          "percentage": "27%"
+        },
+        {
+          "name": "服务商品",
+          "percentage": "13%"
+        }
+      ],
+      "provinceTrad": [
+        {
+          "province": "河北省",
+          "totalTrad": "9.8",
+          "entityTrad": "6.1",
+          "digitTrad": "2.3",
+          "serviceTrad": "1.0"
+        },
+        {
+          "province": "北京市",
+          "totalTrad": "8.8",
+          "entityTrad": "4.1",
+          "digitTrad": "2.3",
+          "serviceTrad": "1.0"
+        }
+      ]
+    },
+    {
+      "dayIndex":"2",
+      "tradeTop5": [
+        {
+          "name": "浙江",
+          "value": "9.45"
+        },
+        {
+          "name": "广东",
+          "value": "9.36"
+        },
+        {
+          "name": "北京",
+          "value": "9.24"
+        },
+        {
+          "name": "江苏",
+          "value": "8.83"
+        },
+        {
+          "name": "四川",
+          "value": "8.52"
+        }
+      ],
+      "tradByCategory": [
+        {
+          "name": "实物商品",
+          "percentage": "20%"
+        },
+        {
+          "name": "数字商品",
+          "percentage": "10%"
+        },
+        {
+          "name": "服务商品",
+          "percentage": "70%"
+        }
+      ],
+      "provinceTrad": [
+        {
+          "province": "河北省",
+          "totalTrad": "9.8",
+          "entityTrad": "6.1",
+          "digitTrad": "2.3",
+          "serviceTrad": "1.0"
+        },
+        {
+          "province": "北京市",
+          "totalTrad": "8.8",
+          "entityTrad": "4.1",
+          "digitTrad": "2.3",
+          "serviceTrad": "1.0"
+        }
+      ]
+    },
+    {
+      "dayIndex":"3",
+      "tradeTop5": [
+        {
+          "name": "浙江",
+          "value": "9.45"
+        },
+        {
+          "name": "广东",
+          "value": "9.36"
+        },
+        {
+          "name": "北京",
+          "value": "9.24"
+        },
+        {
+          "name": "江苏",
+          "value": "8.83"
+        },
+        {
+          "name": "四川",
+          "value": "8.52"
+        }
+      ],
+      "tradByCategory": [
+        {
+          "name": "实物商品",
+          "percentage": "90%"
+        },
+        {
+          "name": "数字商品",
+          "percentage": "2%"
+        },
+        {
+          "name": "服务商品",
+          "percentage": "8%"
+        }
+      ],
+      "provinceTrad": [
+        {
+          "province": "河北省",
+          "totalTrad": "9.8",
+          "entityTrad": "6.1",
+          "digitTrad": "2.3",
+          "serviceTrad": "1.0"
+        },
+        {
+          "province": "北京市",
+          "totalTrad": "8.8",
+          "entityTrad": "4.1",
+          "digitTrad": "2.3",
+          "serviceTrad": "1.0"
+        }
+      ]
+    },
+    {
+      "dayIndex":"4",
+      "tradeTop5": [
+        {
+          "name": "浙江",
+          "value": "9.45"
+        },
+        {
+          "name": "广东",
+          "value": "9.36"
+        },
+        {
+          "name": "北京",
+          "value": "9.24"
+        },
+        {
+          "name": "江苏",
+          "value": "8.83"
+        },
+        {
+          "name": "四川",
+          "value": "8.52"
+        }
+      ],
+      "tradByCategory": [
+        {
+          "name": "实物商品",
+          "percentage": "50%"
+        },
+        {
+          "name": "数字商品",
+          "percentage": "20%"
+        },
+        {
+          "name": "服务商品",
+          "percentage": "30%"
+        }
+      ],
+      "provinceTrad": [
+        {
+          "province": "河北省",
+          "totalTrad": "9.8",
+          "entityTrad": "6.1",
+          "digitTrad": "2.3",
+          "serviceTrad": "1.0"
+        },
+        {
+          "province": "北京市",
+          "totalTrad": "8.8",
+          "entityTrad": "4.1",
+          "digitTrad": "2.3",
+          "serviceTrad": "1.0"
+        }
+      ]
+    },
+    {
+      "dayIndex":"5",
+      "tradeTop5": [
+        {
+          "name": "浙江",
+          "value": "9.45"
+        },
+        {
+          "name": "广东",
+          "value": "9.36"
+        },
+        {
+          "name": "北京",
+          "value": "9.24"
+        },
+        {
+          "name": "江苏",
+          "value": "8.83"
+        },
+        {
+          "name": "四川",
+          "value": "8.52"
+        }
+      ],
+      "tradByCategory": [
+        {
+          "name": "实物商品",
+          "percentage": "60%"
+        },
+        {
+          "name": "数字商品",
+          "percentage": "20%"
+        },
+        {
+          "name": "服务商品",
+          "percentage": "13%"
+        }
+      ],
+      "provinceTrad": [
+        {
+          "province": "河北省",
+          "totalTrad": "9.8",
+          "entityTrad": "6.1",
+          "digitTrad": "2.3",
+          "serviceTrad": "1.0"
+        },
+        {
+          "province": "北京市",
+          "totalTrad": "8.8",
+          "entityTrad": "4.1",
+          "digitTrad": "2.3",
+          "serviceTrad": "1.0"
+        }
+      ]
+    },
+    {
+      "dayIndex":"6",
+      "tradeTop5": [
+        {
+          "name": "浙江",
+          "value": "9.45"
+        },
+        {
+          "name": "广东",
+          "value": "9.36"
+        },
+        {
+          "name": "北京",
+          "value": "9.24"
+        },
+        {
+          "name": "江苏",
+          "value": "8.83"
+        },
+        {
+          "name": "四川",
+          "value": "8.52"
+        }
+      ],
+      "tradByCategory": [
+        {
+          "name": "实物商品",
+          "percentage": "10%"
+        },
+        {
+          "name": "数字商品",
+          "percentage": "60%"
+        },
+        {
+          "name": "服务商品",
+          "percentage": "30%"
+        }
+      ],
+      "provinceTrad": [
+        {
+          "province": "河北省",
+          "totalTrad": "9.8",
+          "entityTrad": "6.1",
+          "digitTrad": "2.3",
+          "serviceTrad": "1.0"
+        },
+        {
+          "province": "北京市",
+          "totalTrad": "8.8",
+          "entityTrad": "4.1",
+          "digitTrad": "2.3",
+          "serviceTrad": "1.0"
+        }
+      ]
+    }
+  ],
+  "totalTrad": {
+    "year": 2016,
+    "month": 1,
+    "data": [
+      123.56,
+      121.32,
+      120.35,
+      130.26,
+      135.97,
+      137.54
+    ]
+  },
+  "entityTrad": {
+    "year": 2016,
+    "month": 1,
+    "data": [
+      123.56,
+      121.32,
+      120.35,
+      130.26,
+      135.97,
+      137.54
+    ]
+  },
+  "digitTrad": {
+    "year": 2016,
+    "month": 1,
+    "data": [
+      123.56,
+      121.32,
+      120.35,
+      130.26,
+      135.97,
+      137.54
+    ]
+  },
+  "serviceTrad": {
+    "year": 2016,
+    "month": 1,
+    "data": [
+      123.56,
+      121.32,
+      120.35,
+      130.26,
+      135.97,
+      137.54
+    ]
+  }
+}
