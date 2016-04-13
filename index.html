@@ -2,64 +2,62 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>Visualization</title>
-    <link rel="stylesheet" href="css/style.css">
+    <title>TopLeft</title>
+    <style>
+        *{   padding:0;margin:0;  }
+    </style>
 </head>
 <body>
-<script src="js/d3.min.js"></script>
+<!--left -->
+<div id="leftTop"></div>
+<!--map and right -->
+<div>
+    <svg width="1400" height="560">
+        <!--map-->
+        <g id="map"></g>
+        <!--right charts-->
+        <g id="right" transform="translate(1100,0) scale(1)"></g>
+    </svg>
+</div>
+<!--bottom-->
+<div id="leftBottom" style="position: absolute;bottom:50px;">
+</div>
+<button id="playBtn">Play</button>
+<script src="https://code.jquery.com/jquery-2.2.2.js"></script>
+<script src="js/d3.js"></script>
 <script src="js/main.js"></script>
 <script>
-
-    var width = 960,
-            height = 500,
-            τ = 2 * Math.PI;
-
-    var fields = [
-        {value: 62, size: 100, label: "physical"},
-        {value: 18, size: 100, label: "digital"},
-        {value: 20, size: 100, label: "service"}
-    ];
-
-    var arc = d3.svg.arc()
-            .innerRadius(width / 6.5 - 60)
-            .outerRadius(width / 6.5 - 50)
-            .startAngle(0);
-
-    var svg = d3.select("body").append("svg")
-            .attr("width", width)
-            .attr("height", height);
-
-    var field = svg.selectAll(".field")
-            .data(fields)
-            .enter().append("g")
-            .attr("transform", function(d, i) { return "translate(" + (i * 2 + 1.25) / 6.5 * width + "," + height / 2 + ")"; })
-            .attr("class", "field");
-
-    field.append("path")
-            .attr("class", "path path--background")
-            .datum({endAngle: τ})
-            .style("fill", "#ccc")
-            .attr("d", arc);
-
-    var foreground = field.append("path")
-            .attr("class", "path path--foreground")
-            .style("fill", "#913ecc")
-            .transition()
-            .duration(750)
-            .call(arcTween);
-
-    function arcTween(transition) {
-        transition.attrTween("d", function(d) {
-            d.endAngle = (d.value / d.size) * -2 * Math.PI;
-            var interpolate = d3.interpolate(0, d.endAngle);
-            return function(t) {
-                d.endAngle = interpolate(t);
-                return arc(d);
+    window.onload = function () {
+        d3.json("p1.json",function(data){
+            var lt_para = {
+                width: 960,
+                height: 900,
+                data:data,
+                container: "leftTop",
+                backgroundColor:"#ccc",
+                foregroundColor:"#913ecc",
+                xOffset:70,
+                yOffset:300,
+                titleWidth:235,
+                titleHeight:50,
+                titleText:["交易额TOP5","交易额分类信息"]
             };
+            lt= _chartMgr.lefttopPart(lt_para);
+            lt.play();
         });
-    }
 
-
+        $("#playBtn").on("click", function () {
+            var text = $(this).text();
+            if (text.toLowerCase() == "play") {
+                $(this).text("Stop");
+                lt.loop();
+            }
+            else {
+                $(this).text("Play");
+                lt.stop();
+            }
+        });
+    };
 
 </script>
 </body>
